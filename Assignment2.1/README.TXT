@@ -8,7 +8,7 @@ d.  Syntax Error
 e.  0.0
 
 Question 2
-    double y = 1.0 / 3
+double y = 1.0 / 3
 
 Question 3
 a.  4
