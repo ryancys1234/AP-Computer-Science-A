@@ -1,4 +1,4 @@
-#Unit 2.1: Java and Math
+#Unit 2.1: Java and Math#
 
 This unit introduces variables and arithmetic operations in Java. Below are answers to selected unit questions.
 
