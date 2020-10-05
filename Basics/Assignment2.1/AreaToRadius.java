@@ -7,7 +7,7 @@ class AreaToRadius {
         double a = 0; // Initialize variables to 0 to mitigate the effects of errors
         double r = 0;
         
-        System.out.println("Area to Radius Calculator. Enter the area of the circle...");
+        System.out.println("Area to Radius Calculator. Enter the area of the circle.");
         System.out.println(" ");
         a = sc.nextDouble();
         

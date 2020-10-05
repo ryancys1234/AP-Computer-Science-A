@@ -11,25 +11,24 @@ class Mortgage {
         double A = 0;
         
         System.out.println("Mortgage Calculator.");
-        System.out.println("Enter the principal...");
+        System.out.println("Enter the principal.");
         System.out.println(" ");
         P = sc.nextDouble();
         
         
         System.out.println(" ");
-        System.out.println("Enter the rate in percent...");
+        System.out.println("Enter the rate in percent.");
         System.out.println(" ");
         r= sc.nextDouble();
         
         
         System.out.println(" ");
-        System.out.println("Enter the time in years...");
+        System.out.println("Enter the time in years.");
         System.out.println(" ");
         n = sc.nextDouble();
         
         A = (double) P * Math.pow((1 + (r / 100)), n);
         
-        System.out.println(" ");
         System.out.println("----------------------------------------------------------------");
         System.out.println("The amount is $" + A + ".");
     }

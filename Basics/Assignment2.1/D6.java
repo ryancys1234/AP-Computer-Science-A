@@ -7,7 +7,7 @@ class D6 {
         Scanner sc = new Scanner(System.in);
         int d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0, d6 = 0, d7 = 0, d8 = 0, d9 = 0, d10 = 0;
         
-        System.out.println("10 six-sided dice generator...");
+        System.out.println("10 six-sided dice generator.");
         System.out.println(" ");
         
         d1 = (int) (Math.random() * 6 + 1);
