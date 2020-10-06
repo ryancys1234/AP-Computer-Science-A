@@ -3,6 +3,9 @@ import java.util.Scanner;
 class Password {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Please enter a password.");
+        System.out.println(" ");
 
         String password = sc.nextLine(); //Reads next string
 
