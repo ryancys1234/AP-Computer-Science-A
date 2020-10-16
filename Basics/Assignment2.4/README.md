@@ -12,13 +12,7 @@ while (i >= 10) {
 ```
 Exercise 2: What is the output of the following loop?
        
-for (i = 1; i <= 10; i++) {
-
-    for (j = 1; j <= i; j++) System.out.print(j + " ");
-                
-    System.out.println(" ");
-    
-}
+for (i = 1; i <= 10; i++) { for (j = 1; j <= i; j++) System.out.print(j + " "); System.out.println(" "); }
 
 ```
 1  (Two spaces after each last number)
