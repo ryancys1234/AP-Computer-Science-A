@@ -1,5 +1,7 @@
 # Unit 2.4: Loops
 
+Below are answers to selected unit questions.
+
 Exercise 1: Rewrite the following loop as a while loop:
     
 for (i = 100; i >= 10; i--) System.out.println("i is: " + 1);
