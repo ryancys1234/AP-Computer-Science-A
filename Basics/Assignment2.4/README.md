@@ -1,6 +1,7 @@
 # Unit 2.4: Loops
 
 Exercise 1: Rewrite the following loop as a while loop:
+
             ```
             for (i = 100; i >= 10; i--) {
                 System.out.println("i is: " + 1);
@@ -16,6 +17,7 @@ while (i >= 10) {
 ```
 
 Exercise 2: What is the output of the following loop?
+
             ```
             for (i = 1; i <= 10; i++) {
                 for (j = 1; j <= i; j++) {
