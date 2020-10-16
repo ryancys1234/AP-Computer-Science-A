@@ -1,15 +1,22 @@
+# Unit 2.4: Loops
+
 Exercise 1: Rewrite the following loop as a while loop:
+            '''
             for (i = 100; i >= 10; i--) {
                 System.out.println("i is: " + 1);
             }
+            '''
 
+'''
 i = 100;
 while (i >= 10) {
     System.out.println("i is: " + 1);
     i--;
 }
+'''
 
 Exercise 2: What is the output of the following loop?
+            '''
             for (i = 1; i <= 10; i++) {
                 for (j = 1; j <= i; j++) {
                     System.out.print(j + " ");
@@ -17,6 +24,7 @@ Exercise 2: What is the output of the following loop?
                 
                 System.out.println(" ");
             }
+            '''
 
 1  (Two spaces after each last number)
 1 2  
