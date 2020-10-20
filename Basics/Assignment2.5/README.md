@@ -1,5 +1,6 @@
 ## Assignment 2.5: Methods
 Below are answers to selected unit questions.
+
 Question 1: What output is printed to the terminal when singOldMacdonald (shown in the notes) is invoked?
 
     Old MacDonald had a farm, EE-I-EE-I-O,
