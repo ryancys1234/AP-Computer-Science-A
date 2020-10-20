@@ -8,7 +8,7 @@ class D6Version2 {
         int x = 0, d = 0, sum = 0;
 
         while (run) {
-            System.out.println("Please indicate the number of dices to be rolled.");
+            System.out.println("Please indicate the number of dice to be rolled.");
             x = sc.nextInt();
 
             System.out.print("You rolled: ");
@@ -21,7 +21,7 @@ class D6Version2 {
             }
 
             System.out.println("");
-            System.out.println("Sum of dices: " + sum);
+            System.out.println("Sum of dice: " + sum);
             System.out.println("");
             System.out.println("Again? Indicate y for yes and n for no.");
             System.out.println("");
