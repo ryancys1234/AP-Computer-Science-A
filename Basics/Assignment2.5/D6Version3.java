@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
 class D6Version3 {
-    public static int rollDie(int sides) {
-       return (int) (Math.random() * sides + 1);
-    }
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean run = true;
@@ -42,5 +39,8 @@ class D6Version3 {
             }
         }
         System.out.println("Goodbye!");
+    }
+    public static int rollDie(int sides) {
+        return (int) (Math.random() * sides + 1);
     }
 }
