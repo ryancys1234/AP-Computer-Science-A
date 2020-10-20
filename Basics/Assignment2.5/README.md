@@ -39,28 +39,16 @@ Question 3: What is the output of the following program (shown in the notes)? Be
 
 
 Question 4: Draw a stack diagram that shows the state of the program the first time ping() is invoked.
-
-     ----------------------
     
-    | println(".")         |
-    
-     ----------------------
+    println(".")
        
-    | ping()               |
+    ping()
     
-     ----------------------
+    baffle()
     
-    | baffle()             |
+    zoop()
     
-     ----------------------
-    
-    | zoop()               |
-    
-     ----------------------
-    
-    | main (String[] args) |
-    
-     ----------------------
+    main (String[] args)
 
 Question 5: What happens if you invoke baffle() at the end of the ping() method? 
 
@@ -73,4 +61,4 @@ Question 6: Write the method displayBox that has two "in" parameters, width and 
              for (int x = 1; x <= w; x++) System.out.print("$");
              System.out.println("");
          }
-     }
+    }
