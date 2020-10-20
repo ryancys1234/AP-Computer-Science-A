@@ -21,6 +21,6 @@ class D6 {
         d9 = (int) (Math.random() * 6 + 1);
         d10 = (int) (Math.random() * 6 + 1);
         
-        System.out.println("The dices are " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6 + ", " + d7 + ", " + d8 + ", " + d9 + ", " + d10 + ".");
+        System.out.println("The dice are " + d1 + ", " + d2 + ", " + d3 + ", " + d4 + ", " + d5 + ", " + d6 + ", " + d7 + ", " + d8 + ", " + d9 + ", " + d10 + ".");
     }
 }
