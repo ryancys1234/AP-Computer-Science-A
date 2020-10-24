@@ -2,7 +2,7 @@
 
 Below are answers to selected unit questions.
 
-Question 1: What output is printed to the terminal when singOldMacdonald (shown in the notes) is invoked?
+Question 1: What output is printed to the terminal when singOldMacdonald (shown in the assignment notes) is invoked?
 
     Old MacDonald had a farm, EE-I-EE-I-O,
 
@@ -29,7 +29,7 @@ Question 2: How would you invoke the verse method if you wanted to sing about a 
 
     verse("duck", "quack");
 
-Question 3: What is the output of the following program (shown in the notes)? Be precise about where there are spaces and where there are new lines. Hint: Start by describing in words what ping() and baffle() do when they are invoked.
+Question 3: What is the output of the following program (shown in the assignment notes)? Be precise about where there are spaces and where there are new lines. Hint: Start by describing in words what ping() and baffle() do when they are invoked.
 
     When invoked, baffle() prints "wug" and invokes ping() while ping() prints ".". The output:
 
