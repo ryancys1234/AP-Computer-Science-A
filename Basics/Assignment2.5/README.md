@@ -42,8 +42,6 @@ Question 3: What is the output of the following program (shown in the assignment
 
 
 Question 4: Draw a stack diagram that shows the state of the program the first time ping() is invoked.
-    
-    println(".")
        
     ping()
     
@@ -55,7 +53,12 @@ Question 4: Draw a stack diagram that shows the state of the program the first t
 
 Question 5: What happens if you invoke baffle() at the end of the ping() method? 
 
-    Since main(String[] args) will be called first and the ordering of the other methods does not matter, nothing will change.
+    public static void ping() {
+        System.out.println(".");
+        baffle();
+    }
+
+    If the ping() method is as above, each method will invoke the other continuously.
 
 Question 6: Write the method displayBox that has two "in" parameters, width and height. The method will print out a box made of '$' characters to the terminal that is as wide and high as the arguments passed to it.
 
