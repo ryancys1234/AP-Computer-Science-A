@@ -5,11 +5,8 @@ Below are answers to selected unit questions.
 Question 1: What output is printed to the terminal when singOldMacdonald (shown in the assignment notes) is invoked?
 
     Old MacDonald had a farm, EE-I-EE-I-O,
-
     And on that farm he had a cow, EE-I-EE-I-O,
-
     With a moo moo here and a moo moo there
-
     Here a moo, there a moo, everywhere a moo moo
 
     Old MacDonald had a farm, EE-I-EE-I-O.
