@@ -11,7 +11,6 @@ class Question3 {
            squareOfSum = (int) Math.pow(sum, 2);
        }
        
-       int difference = squareOfSum - sumOfSquares;
-       System.out.println(difference);
+       System.out.println(squareOfSum - sumOfSquares);
     }
 }
