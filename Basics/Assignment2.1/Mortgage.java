@@ -15,12 +15,10 @@ class Mortgage {
         System.out.println(" ");
         P = sc.nextDouble();
         
-        
         System.out.println(" ");
         System.out.println("Enter the rate in percent.");
         System.out.println(" ");
         r= sc.nextDouble();
-        
         
         System.out.println(" ");
         System.out.println("Enter the time in years.");
