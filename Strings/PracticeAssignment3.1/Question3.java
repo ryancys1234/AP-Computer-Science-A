@@ -1,8 +1,6 @@
 class Question3 {
     public static void main(String[] args) {
-        bin(11);
-        bin(1010);
-        bin(45);
+        System.out.println(bin(11));
     }
     
     public static String bin(int n) {
