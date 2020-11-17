@@ -1,6 +1,8 @@
 class Question2 {
     public static void main(String[] args) {
         System.out.println(palindrome("Racecar"));
+        System.out.println(palindrome("Taco cat"));
+        System.out.println(palindrome("Not a palindrome"));
     }
     
     public static boolean palindrome(String str) {

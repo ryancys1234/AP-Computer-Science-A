@@ -1,6 +1,7 @@
 class Question3 {
     public static void main(String[] args) {
         System.out.println(binary(11));
+        System.out.println(binary(1011));
     }
     
     public static String binary(int n) {
