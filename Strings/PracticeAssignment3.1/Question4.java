@@ -1,33 +1,21 @@
-
-/**
- * Write a description of class Question4 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Question4
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Question4
-     */
-    public Question4()
-    {
-        // initialise instance variables
-        x = 0;
+class Question4 {
+    public static void main(String[] args) {
+        System.out.println(pigLatin("I think starcraft is good"));
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public static String pigLatin(String str) {
+        String ans = "";
+        while (str.indexOf(" ") > 0) {
+            String word = str.substring(0, str.indexOf(" "));
+            
+            if (str.length() > 2) {
+                ans = word.substring(1, word.length()) + word.charAt(0) + "ay";
+            } else ans += word;
+            
+            str = str.substring(str.indexOf(" "));
+        }
+        
+        
+        return ans;
     }
 }

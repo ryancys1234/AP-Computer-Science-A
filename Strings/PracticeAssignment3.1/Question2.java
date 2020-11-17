@@ -1,33 +1,20 @@
-
-/**
- * Write a description of class Question2 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Question2
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Question2
-     */
-    public Question2()
-    {
-        // initialise instance variables
-        x = 0;
+class Question2 {
+    public static void main(String[] args) {
+        System.out.println(palindrome("Racecar"));
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public static boolean palindrome(String str) {
+        String ans = "";
+        boolean var = true;
+        
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isLetter(str.charAt(i))) ans += str.substring(i, i + 1).toLowerCase();
+        }
+        
+        for (int j = 0; j <= (int) ans.length() / 2 + 1; j++) {
+            if (ans.charAt(j) != (ans.charAt(ans.length() - 1 - j))) var = false;
+        }
+        
+        return var;
     }
 }

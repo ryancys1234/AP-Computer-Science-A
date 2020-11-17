@@ -1,9 +1,9 @@
 class Question3 {
     public static void main(String[] args) {
-        System.out.println(bin(11));
+        System.out.println(binary(11));
     }
     
-    public static String bin(int n) {
+    public static String binary(int n) {
         String ans = "";
         int remainder = 0;
         while (n > 0) {

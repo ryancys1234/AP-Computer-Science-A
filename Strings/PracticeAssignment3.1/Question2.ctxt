@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Question3
+comment0.target=Question2
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=n
-comment2.target=java.lang.String\ binary(int)
+comment2.params=str
+comment2.target=boolean\ palindrome(java.lang.String)
 numComments=3
