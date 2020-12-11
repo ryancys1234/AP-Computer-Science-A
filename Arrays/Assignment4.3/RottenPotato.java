@@ -1,4 +1,4 @@
-class Question1 {
+class RottenPotato {
     public static void main(String[] args) {
         int[][] test = {{4, 6, 2, 5}, {7, 9, 4, 8}, {6, 9, 3, 7}};
         
