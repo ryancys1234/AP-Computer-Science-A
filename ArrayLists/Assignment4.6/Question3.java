@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-class Question2 {
-    public static ArrayList<Integer> goldbach(int n) {
+class Question3 {
+    public static ArrayList<Integer> add(ArrayList<Integer> n, ArrayList<Integer> m) {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         
-        for (int i = 2; i <= n; i++) {
+        for (int i = 0; i < Math.max(n.size(), m.size()).size(); i++) {
             ans.add(i);
         }
         
@@ -21,6 +21,16 @@ class Question2 {
     }
     
     public static void main(String[] args) {
-        System.out.println(goldbach(4));
+        ArrayList<Integer> n = new ArrayList<Integer>();
+        n.add(1);
+        n.add(0);
+        n.add(9);
+        
+        ArrayList<Integer> m = new ArrayList<Integer>();
+        m.add(1);
+        m.add(0);
+        m.add(9);
+        
+        System.out.println(add(n, m));
     }
 }
