@@ -4,7 +4,7 @@ class Question3 {
     public static ArrayList<Integer> add(ArrayList<Integer> n, ArrayList<Integer> m) {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         
-        for (int i = 0; i < Math.max(n.size(), m.size()).size(); i++) {
+        for (int i = 0; i < Math.max(n.size(), m.size()); i++) {
             ans.add(i);
         }
         
