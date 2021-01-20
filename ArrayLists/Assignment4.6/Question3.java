@@ -1,36 +1,58 @@
 import java.util.ArrayList;
 
 class Question3 {
-    public static ArrayList<Integer> add(ArrayList<Integer> n, ArrayList<Integer> m) {
+    public static ArrayList<Integer> add(ArrayList<Integer> a, ArrayList<Integer> b) {
         ArrayList<Integer> ans = new ArrayList<Integer>();
+        int numA = a.size() - 1, numB = b.size() - 1, var = 0;
         
-        for (int i = 0; i < Math.max(n.size(), m.size()); i++) {
-            ans.add(i);
-        }
-        
-        for (int i = 0; i < ans.size(); i++) {
-            int var = ans.get(i);
-            for (int j = ans.size() - 1; j >= 0; j--) {
-                if (ans.get(j) % var == 0 && ans.get(j) != var) {
-                    ans.remove(j);
-                }
+        while (numA >= 0 || numB >= 0) {
+            int sum = 0;
+            
+            if (numA >= 0 && numB >= 0) sum = a.get(numA) + b.get(numB) + var;
+            else {
+                if (numA >= 0) sum = a.get(numA) + var;
+                if (numB >= 0) sum = b.get(numB) + var;
             }
+            
+            if (sum >= 10) {
+                sum -= 10;
+                var = 1;
+            } else var = 0;
+            
+            ans.add(0, sum);
+            
+            numA--;
+            numB--;
         }
+        
+        if (var == 1) ans.add(0, 1);
         
         return ans;
     }
     
     public static void main(String[] args) {
-        ArrayList<Integer> n = new ArrayList<Integer>();
-        n.add(1);
-        n.add(0);
-        n.add(9);
+        ArrayList<Integer> listA = new ArrayList<Integer>();
+        ArrayList<Integer> listB = new ArrayList<Integer>();
+        ArrayList<Integer> listC = new ArrayList<Integer>();
+        ArrayList<Integer> listD = new ArrayList<Integer>();
         
-        ArrayList<Integer> m = new ArrayList<Integer>();
-        m.add(1);
-        m.add(0);
-        m.add(9);
+        listA.add(1);
+        listA.add(0);
+        listA.add(9);
+        listB.add(1);
+        listB.add(0);
+        listB.add(9);
+        listB.add(5);
+        listC.add(9);
+        listC.add(9);
+        listC.add(9);
+        listC.add(9);
+        listD.add(9);
+        listD.add(9);
+        listD.add(9);
+        listD.add(9);
         
-        System.out.println(add(n, m));
+        System.out.println(add(listA, listB));
+        System.out.println(add(listC, listD));
     }
 }
