@@ -11,9 +11,7 @@ class Question1 {
         for (int i = 0; i < ans.size(); i++) {
             int var = ans.get(i);
             for (int j = ans.size() - 1; j >= 0; j--) {
-                if (ans.get(j) % var == 0 && ans.get(j) != var) {
-                    ans.remove(j);
-                }
+                if (ans.get(j) % var == 0 && ans.get(j) != var) ans.remove(j);
             }
         }
         
