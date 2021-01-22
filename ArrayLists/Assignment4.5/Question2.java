@@ -10,7 +10,7 @@ class Question2 {
             if (nums.get(i) < smallest) smallest = nums.get(i);
         }
         
-        for (int i = 0; i < nums.size(); i++) {
+        for (int i = nums.size() - 1; i >= 0; i--) {
             if (nums.get(i) == smallest) nums.remove(i);
         }
     }
