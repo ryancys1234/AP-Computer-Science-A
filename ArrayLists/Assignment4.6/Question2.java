@@ -11,9 +11,7 @@ class Question2 {
         for (int i = 0; i < nums.size(); i++) {
             int var = nums.get(i);
             for (int j = nums.size() - 1; j >= 0; j--) {
-                if (nums.get(j) % var == 0 && nums.get(j) != var) {
-                    nums.remove(j);
-                }
+                if (nums.get(j) % var == 0 && nums.get(j) != var) nums.remove(j);
             }
         }
         
@@ -41,7 +39,7 @@ class Question2 {
     //     for (int i = 0; i < nums.size(); i++) {
     //         if (nums.contains(n - nums.get(i))) {
     //             System.out.print(nums.get(i) + " + " + (n - nums.get(i)));
-    //             return;
+    //             return; // or break;
     //         }
     //     }
     // }
