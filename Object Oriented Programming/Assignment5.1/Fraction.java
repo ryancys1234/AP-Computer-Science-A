@@ -57,7 +57,7 @@ class Fraction {
     }
     
     public Double toDouble() {
-        double ans = num / denom;
+        double ans = this.num / this.denom;
         return ans;
     }
     
@@ -74,11 +74,51 @@ class Fraction {
         } else this.denom = denom;
     }
     
+    public void reduce() {
+        if (this.num != 0 && this.denom != 0) {
+            int ans = gcf(this.num, this.denom);
+            
+            this.num = this.num / ans;
+            this.denom = this.denom / ans;
+        }
+    }
+    
     // Static Methods
+    
+    public static Fraction multiply(Fraction a, Fraction b) {
+        Fraction f;
+        
+        if (a.denom == 0 || b.denom == 0) {
+            f = new Fraction(a.getNum() * b.getNum(), 1);
+            System.out.println("Error: a denominator is 0.");
+        } else {
+            f = new Fraction(a.getNum() * b.getNum(), a.getDenom() * b.getDenom());
+            f.reduce();
+        }
+        
+        return f;
+    }
+    
+    public static Fraction divide(Fraction a, Fraction b) {
+        Fraction f;
+        
+        if (a.denom == 0 || b.denom == 0) {
+            f = new Fraction(a.getNum() * b.getDenom(), 1);
+            System.out.println("Error: a denominator is 0.");
+        } else {
+            f = new Fraction(a.getNum() * b.getDenom(), a.getDenom() * b.getNum());
+            f.reduce();
+        }
+        
+        return f;
+    }
     
     // Helper Method
     
-    public int gcf(int a, int b) {
+    private int gcf(int a, int b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
+        
         while (a != b) {
             int diff = Math.abs(b - a);
             
