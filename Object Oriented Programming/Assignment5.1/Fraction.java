@@ -20,10 +20,10 @@ class Fraction {
     public Fraction(String f) {
         this.num = Integer.parseInt(f.substring(0, f.indexOf("/")));
         
-        if (Integer.parseInt(f.substring(f.indexOf("/"), f.length() - 1)) == 0) {
+        if (Integer.parseInt(f.substring(f.indexOf("/") + 1, f.length())) == 0) {
             System.out.println("Error: the denominator is 0.");
             this.denom = 1;
-        } else this.denom = Integer.parseInt(f.substring(f.indexOf("/"), f.length() - 1));
+        } else this.denom = Integer.parseInt(f.substring(f.indexOf("/") + 1, f.length()));
     }
     
     public Fraction(Fraction f) {
@@ -56,6 +56,11 @@ class Fraction {
         } else return this.num + " / " + this.denom;
     }
     
+    public Double toDouble() {
+        double ans = num / denom;
+        return ans;
+    }
+    
     // Mutator Methods
     
     public void setNum(int num) {
@@ -63,7 +68,10 @@ class Fraction {
     }
     
     public void setDenom(int denom) {
-        this.denom = denom;
+        if (this.denom == 0) {
+            System.out.println("Error: the denominator is 0.");
+            this.num = 1;
+        } else this.denom = denom;
     }
     
     // Static Methods
@@ -73,7 +81,9 @@ class Fraction {
     public int gcf(int a, int b) {
         while (a != b) {
             int diff = Math.abs(b - a);
-            b = diff;
+            
+            if (a > b) a = diff;
+            else b = diff;
         }
         
         return a;
