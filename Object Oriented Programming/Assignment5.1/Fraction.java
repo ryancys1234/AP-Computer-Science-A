@@ -4,8 +4,8 @@ class Fraction {
     // Constructors
     
     public Fraction() {
-        num = 1;
-        denom = 2;
+        this.num = 1;
+        this.denom = 2;
     }
     
     public Fraction(int n, int d) {
@@ -28,6 +28,7 @@ class Fraction {
     
     public Fraction(Fraction f) {
         this.num = f.num;
+        
         if (f.denom == 0) {
             System.out.println("Error: the denominator is 0.");
             this.denom = 1;
@@ -41,19 +42,11 @@ class Fraction {
     }
     
     public int getDenom() {
-        if (this.denom == 0) {
-            System.out.println("Error: the denominator is 0.");
-            this.denom = 1;
-        }
-        
         return this.denom;
     }
     
     public String toString() {
-        if (this.denom == 0) {
-            System.out.println("Error: the denominator is 0.");
-            return this.num + " / " + 1;
-        } else return this.num + " / " + this.denom;
+        return this.num + " / " + this.denom;
     }
     
     public Double toDouble() {
@@ -68,9 +61,9 @@ class Fraction {
     }
     
     public void setDenom(int denom) {
-        if (this.denom == 0) {
+        if (denom == 0) {
             System.out.println("Error: the denominator is 0.");
-            this.num = 1;
+            this.denom = 1;
         } else this.denom = denom;
     }
     
@@ -85,32 +78,60 @@ class Fraction {
     
     // Static Methods
     
-    public static Fraction multiply(Fraction a, Fraction b) {
-        Fraction f;
+    public static Fraction add(Fraction a, Fraction b) {
+        Fraction ans;
         
         if (a.denom == 0 || b.denom == 0) {
-            f = new Fraction(a.getNum() * b.getNum(), 1);
-            System.out.println("Error: a denominator is 0.");
+            System.out.println("Error: one or more denominator(s) is 0.");
+            ans = new Fraction((a.num * b.denom) + (b.num * a.denom), 1);
         } else {
-            f = new Fraction(a.getNum() * b.getNum(), a.getDenom() * b.getDenom());
-            f.reduce();
+            ans = new Fraction((a.num * b.denom) + (b.num * a.denom), a.denom * b.denom);
+            ans.reduce();
         }
         
-        return f;
+        return ans;
+    }
+    
+    public static Fraction subtract(Fraction a, Fraction b) {
+        Fraction ans;
+        
+        if (a.denom == 0 || b.denom == 0) {
+            System.out.println("Error: one or more denominator(s) is 0.");
+            ans = new Fraction((a.num * b.denom) - (b.num * a.denom), 1);
+        } else {
+            ans = new Fraction((a.num * b.denom) - (b.num * a.denom), a.denom * b.denom);
+            ans.reduce();
+        }
+        
+        return ans;
+    }
+    
+    public static Fraction multiply(Fraction a, Fraction b) {
+        Fraction ans;
+        
+        if (a.denom == 0 || b.denom == 0) {
+            System.out.println("Error: one or more denominator(s) is 0.");
+            ans = new Fraction(a.num * b.num, 1);
+        } else {
+            ans = new Fraction(a.num * b.num, a.denom * b.denom);
+            ans.reduce();
+        }
+        
+        return ans;
     }
     
     public static Fraction divide(Fraction a, Fraction b) {
-        Fraction f;
+        Fraction ans;
         
         if (a.denom == 0 || b.denom == 0) {
-            f = new Fraction(a.getNum() * b.getDenom(), 1);
-            System.out.println("Error: a denominator is 0.");
+            System.out.println("Error: one or more denominator(s) is 0.");
+            return new Fraction(a.num * b.denom, 1);
         } else {
-            f = new Fraction(a.getNum() * b.getDenom(), a.getDenom() * b.getNum());
-            f.reduce();
+            ans = new Fraction(a.num * b.denom, a.denom * b.num);
+            ans.reduce();
         }
         
-        return f;
+        return ans;
     }
     
     // Helper Method
