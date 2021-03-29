@@ -1,6 +1,9 @@
 class Question2 {
+    private static int num = 0;
+    
     public static void main(String[] args) {
         System.out.println(triangle(5));
+        System.out.println(reverseTriangle(5));
     }
     
     public static String triangle(int a) {
@@ -12,11 +15,13 @@ class Question2 {
     }
     
     public static String reverseTriangle(int a) {
-        if (a == 0) return "";
+        num++;
         
-        printStars(a);
+        if (num > a) return "";
         
-        return triangle(a + 1);
+        printStars(num);
+        
+        return reverseTriangle(a);
     }
     
     public static void printStars(int n) {
