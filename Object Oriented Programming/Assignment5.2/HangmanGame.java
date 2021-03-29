@@ -10,19 +10,13 @@ public class HangmanGame {
             hangingMan.show();
             puzzle.show();
             System.out.print("\nMake a guess: ");
-            String guess = scanner.nextLine();
-            if (!puzzle.makeGuess(guess)) {
-                hangingMan.dieSomeMore();
-            }
+            if (!puzzle.makeGuess(scanner.nextLine())) hangingMan.dieSomeMore();
             
             clearScreen();
         }
         
-        if (hangingMan.isntDead()) {
-            System.out.println("You win!");
-        } else {
-            System.out.println("You lose! The word was " + puzzle.getWord());
-        }
+        if (hangingMan.isntDead()) System.out.println("You win!");
+        else System.out.println("You lose! The word was " + puzzle.getWord());
     }
     
     public static void clearScreen() {
