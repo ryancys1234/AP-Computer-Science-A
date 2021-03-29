@@ -33,8 +33,8 @@ public class Puzzle {
     public void show() {
         System.out.println("Word: ");
         
-        for (int i = 0; i < word.length() - 1; i++) {
-            if (list.contains(word.substring(i, i + 1))) System.out.print(word.substring(i, i + 1) + " ");
+        for (int i = 0; i < word.length(); i++) {
+            if (list.contains(word.substring(i, i + 1))) System.out.print(word.charAt(i) + " ");
             else System.out.print("_ ");
         }
         
@@ -49,7 +49,7 @@ public class Puzzle {
     }
     
     public boolean isUnsolved() {
-        for (int i = 0; i < word.length() - 1; i++) {
+        for (int i = 0; i < word.length(); i++) {
             if (!list.contains(word.substring(i, i + 1))) return true;
         }
         
