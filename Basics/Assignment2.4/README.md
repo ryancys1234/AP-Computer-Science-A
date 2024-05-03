@@ -1,6 +1,6 @@
-## Unit 2.4: Loops
+# Unit 2.4: Loops
 
-Below are answers to selected unit questions.
+Below are answers to selected questions.
 
 Exercise 1: Rewrite the following loop as a while loop:
     
