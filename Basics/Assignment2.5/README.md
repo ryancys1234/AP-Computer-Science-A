@@ -2,7 +2,7 @@
 
 Below are answers to selected questions.
 
-Question 1: What output is printed to the terminal when singOldMacdonald (shown in the assignment notes) is invoked?
+Question 1: What output is printed to the terminal when singOldMacdonald is invoked?
 
     Old MacDonald had a farm, EE-I-EE-I-O,
     And on that farm he had a cow, EE-I-EE-I-O,
