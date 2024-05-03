@@ -1,6 +1,6 @@
-## Assignment 2.5: Methods
+# Assignment 2.5: Methods
 
-Below are answers to selected unit questions.
+Below are answers to selected questions.
 
 Question 1: What output is printed to the terminal when singOldMacdonald (shown in the assignment notes) is invoked?
 
